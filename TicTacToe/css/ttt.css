@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.ttt > ul {
+  list-style: none;
+  width: 300px;
+}
+
+.ttt li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  width: 100px;
+  height: 100px;
+  float: left;
+  border: 5px solid black;
+  box-sizing: border-box;
+  font-size: 70px;
+}
+
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.ttt .unselected:hover {
+  background: yellow;
+}
+
+.ttt .selected, .ttt .selected:hover {
+  background: white;
+}
+
+.ttt .winner, .ttt .winner:hover {
+  background: green;
+  color: white;
+}
+
+.ttt .loser {
+  background: white;
+  color: red;
+}
